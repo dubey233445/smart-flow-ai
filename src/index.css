@@ -4,56 +4,58 @@
 
 @layer base {
   :root {
-    /* SkillYug Lab — Premium dark AI/automation theme */
-    --background: 222 39% 8%;
-    --foreground: 210 40% 98%;
+    /* SkillYug Lab — Light premium AI theme */
+    --background: 0 0% 100%;
+    --foreground: 222 47% 11%; /* #111827 */
 
-    --card: 222 35% 11%;
-    --card-foreground: 210 40% 98%;
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11%;
 
-    --popover: 222 35% 11%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 11%;
 
+    /* Primary blue #2563EB */
     --primary: 221 83% 53%;
-    --primary-foreground: 210 40% 98%;
+    --primary-foreground: 0 0% 100%;
     --primary-glow: 221 90% 65%;
 
+    /* Secondary purple #7C3AED */
     --secondary: 262 83% 58%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary-foreground: 0 0% 100%;
     --secondary-glow: 270 90% 70%;
 
-    --muted: 222 30% 15%;
-    --muted-foreground: 215 20% 70%;
+    /* Section alternate #F8FAFC */
+    --muted: 210 40% 98%;
+    --muted-foreground: 220 9% 46%; /* #6B7280 */
 
     --accent: 262 83% 58%;
-    --accent-foreground: 210 40% 98%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84% 60%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 222 30% 18%;
-    --input: 222 30% 18%;
+    /* Border #E5E7EB */
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
     --ring: 221 83% 53%;
 
-    --radius: 1rem;
+    --radius: 0.625rem; /* 10px — cards/buttons */
 
     /* Gradients */
     --gradient-primary: linear-gradient(135deg, hsl(221 83% 53%), hsl(262 83% 58%));
-    --gradient-glow: radial-gradient(circle at 50% 50%, hsl(221 83% 53% / 0.4), transparent 70%);
-    --gradient-hero: linear-gradient(180deg, hsl(222 39% 8%) 0%, hsl(222 45% 6%) 100%);
-    --gradient-cta: linear-gradient(135deg, hsl(221 83% 53% / 0.2), hsl(262 83% 58% / 0.2));
+    --gradient-soft: linear-gradient(180deg, hsl(0 0% 100%) 0%, hsl(210 40% 98%) 100%);
+    --gradient-hero: radial-gradient(ellipse at top, hsl(221 100% 97%) 0%, hsl(0 0% 100%) 60%);
+    --gradient-cta: linear-gradient(135deg, hsl(221 83% 53%), hsl(262 83% 58%));
 
-    /* Glass */
-    --glass-bg: hsl(222 35% 14% / 0.6);
-    --glass-border: hsl(210 40% 98% / 0.08);
+    /* Soft shadows — floating look */
+    --shadow-sm: 0 1px 2px 0 hsl(220 40% 20% / 0.04);
+    --shadow-card: 0 4px 20px -4px hsl(220 40% 20% / 0.08), 0 2px 6px -2px hsl(220 40% 20% / 0.04);
+    --shadow-card-hover: 0 12px 32px -8px hsl(220 40% 20% / 0.12), 0 4px 12px -4px hsl(220 40% 20% / 0.06);
+    --shadow-glow-primary: 0 10px 40px -10px hsl(221 83% 53% / 0.45);
+    --shadow-glow-soft: 0 0 60px hsl(221 90% 65% / 0.25);
+    --shadow-elegant: 0 20px 50px -20px hsl(221 83% 53% / 0.35);
 
-    /* Shadows / glows */
-    --shadow-glow-primary: 0 0 60px hsl(221 90% 65% / 0.35);
-    --shadow-glow-secondary: 0 0 60px hsl(270 90% 70% / 0.35);
-    --shadow-elegant: 0 20px 60px -20px hsl(221 83% 53% / 0.4);
-    --shadow-card: 0 10px 40px -10px hsl(222 80% 4% / 0.6);
-
-    --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
 
@@ -72,14 +74,14 @@
 
 @layer components {
   .glass {
-    background: var(--glass-bg);
+    background: hsl(0 0% 100% / 0.7);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
-    border: 1px solid var(--glass-border);
+    border: 1px solid hsl(220 13% 91% / 0.8);
   }
 
   .glow-blob {
-    @apply absolute rounded-full blur-3xl pointer-events-none opacity-60;
+    @apply absolute rounded-full blur-3xl pointer-events-none opacity-50;
   }
 
   .text-gradient {
@@ -91,8 +93,8 @@
 
   .grid-bg {
     background-image:
-      linear-gradient(hsl(210 40% 98% / 0.04) 1px, transparent 1px),
-      linear-gradient(90deg, hsl(210 40% 98% / 0.04) 1px, transparent 1px);
+      linear-gradient(hsl(220 13% 91% / 0.5) 1px, transparent 1px),
+      linear-gradient(90deg, hsl(220 13% 91% / 0.5) 1px, transparent 1px);
     background-size: 60px 60px;
   }
 }
