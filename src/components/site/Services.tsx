@@ -9,29 +9,29 @@ const services = [
 
 const Services = () => {
   return (
-    <section id="services" className="relative py-28">
-      <div className="mx-auto max-w-7xl px-6">
-        <div className="text-center max-w-2xl mx-auto mb-16">
+    <section id="services" className="relative py-20 md:py-24 bg-background">
+      <div className="mx-auto max-w-content px-6 md:px-10">
+        <div className="text-center max-w-2xl mx-auto mb-14">
           <p className="text-sm font-medium text-primary mb-3">What we build</p>
-          <h2 className="font-display text-4xl md:text-5xl font-bold">
+          <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground">
             Solutions that <span className="text-gradient">work for you</span>
           </h2>
-          <p className="mt-4 text-muted-foreground">
+          <p className="mt-4 text-muted-foreground leading-relaxed">
             Focused, lightweight, and built to scale — pick what fits your business.
           </p>
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
           {services.map((s) => (
-            <div key={s.title} className="group relative glass rounded-2xl p-7 transition-smooth hover:-translate-y-2 hover:shadow-glow-primary">
-              <div className="absolute inset-0 rounded-2xl bg-gradient-primary opacity-0 group-hover:opacity-10 transition-opacity" />
-              <div className="relative">
-                <div className="h-12 w-12 rounded-xl grid place-items-center bg-gradient-primary shadow-glow-primary mb-5">
-                  <s.icon className="h-5 w-5 text-primary-foreground" />
-                </div>
-                <h3 className="font-display font-semibold text-xl mb-2">{s.title}</h3>
-                <p className="text-sm text-muted-foreground leading-relaxed">{s.desc}</p>
+            <div
+              key={s.title}
+              className="group relative rounded-xl bg-card border border-border p-6 shadow-card hover:shadow-card-hover hover:-translate-y-1 transition-smooth"
+            >
+              <div className="h-12 w-12 rounded-lg grid place-items-center bg-gradient-primary shadow-glow-primary mb-5 group-hover:scale-110 transition-transform">
+                <s.icon className="h-5 w-5 text-primary-foreground" />
               </div>
+              <h3 className="font-display font-semibold text-lg text-foreground mb-2">{s.title}</h3>
+              <p className="text-sm text-muted-foreground leading-relaxed">{s.desc}</p>
             </div>
           ))}
         </div>
