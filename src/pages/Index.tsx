@@ -10,7 +10,7 @@ import Footer from "@/components/site/Footer";
 
 const Index = () => {
   return (
-    <main className="min-h-screen bg-gradient-hero overflow-x-hidden">
+    <main className="min-h-screen bg-background overflow-x-hidden">
       <Navbar />
       <Hero />
       <TrustedStrip />

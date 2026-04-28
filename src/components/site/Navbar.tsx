@@ -11,9 +11,9 @@ const links = [
 const Navbar = () => {
   return (
     <header className="fixed top-0 inset-x-0 z-50">
-      <div className="mx-auto max-w-7xl px-6 py-4">
-        <div className="glass rounded-2xl flex items-center justify-between px-5 py-3">
-          <a href="#" className="flex items-center gap-2 font-display font-bold text-lg">
+      <div className="mx-auto max-w-content px-6 md:px-10 py-4">
+        <div className="rounded-xl bg-white/80 backdrop-blur-xl border border-border shadow-sm flex items-center justify-between px-5 py-3">
+          <a href="#" className="flex items-center gap-2 font-display font-bold text-lg text-foreground">
             <span className="grid place-items-center h-8 w-8 rounded-lg bg-gradient-primary shadow-glow-primary">
               <Sparkles className="h-4 w-4 text-primary-foreground" />
             </span>

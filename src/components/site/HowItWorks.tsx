@@ -9,29 +9,27 @@ const steps = [
 
 const HowItWorks = () => {
   return (
-    <section id="how" className="relative py-28 overflow-hidden">
-      <div className="glow-blob h-[400px] w-[400px] top-20 left-1/2 -translate-x-1/2 bg-secondary/30" />
-      <div className="relative mx-auto max-w-7xl px-6">
-        <div className="text-center max-w-2xl mx-auto mb-16">
+    <section id="how" className="relative py-20 md:py-24 bg-muted overflow-hidden">
+      <div className="relative mx-auto max-w-content px-6 md:px-10">
+        <div className="text-center max-w-2xl mx-auto mb-14">
           <p className="text-sm font-medium text-primary mb-3">How it works</p>
-          <h2 className="font-display text-4xl md:text-5xl font-bold">
+          <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground">
             From idea to <span className="text-gradient">automation</span>
           </h2>
         </div>
 
-        <div className="relative grid md:grid-cols-4 gap-6">
-          <div className="hidden md:block absolute top-10 left-[12%] right-[12%] h-px bg-gradient-to-r from-transparent via-primary/60 to-transparent" />
+        <div className="relative grid md:grid-cols-4 gap-8">
+          <div className="hidden md:block absolute top-10 left-[12%] right-[12%] h-px bg-gradient-to-r from-transparent via-primary/40 to-transparent" />
           {steps.map((s, i) => (
             <div key={s.title} className="relative group text-center">
-              <div className="relative mx-auto h-20 w-20 grid place-items-center rounded-2xl glass shadow-card group-hover:shadow-glow-primary transition-smooth">
-                <div className="absolute inset-0 rounded-2xl bg-gradient-primary opacity-0 group-hover:opacity-20 transition-opacity" />
-                <s.icon className="h-7 w-7 text-primary-glow relative" style={{ color: "hsl(var(--primary-glow))" }} />
+              <div className="relative mx-auto h-20 w-20 grid place-items-center rounded-2xl bg-white border border-border shadow-card group-hover:shadow-glow-primary transition-smooth">
+                <s.icon className="h-7 w-7 text-primary" />
                 <span className="absolute -top-2 -right-2 h-7 w-7 rounded-full bg-gradient-primary text-xs font-bold grid place-items-center text-primary-foreground shadow-glow-primary">
                   {i + 1}
                 </span>
               </div>
-              <h3 className="mt-6 font-display font-semibold text-xl">{s.title}</h3>
-              <p className="mt-2 text-sm text-muted-foreground max-w-[220px] mx-auto">{s.desc}</p>
+              <h3 className="mt-5 font-display font-semibold text-lg text-foreground">{s.title}</h3>
+              <p className="mt-2 text-sm text-muted-foreground max-w-[220px] mx-auto leading-relaxed">{s.desc}</p>
             </div>
           ))}
         </div>
