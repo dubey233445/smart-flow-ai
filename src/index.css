@@ -120,6 +120,36 @@
   /* Button press */
   .btn-press { transition: transform var(--dur-fast) var(--ease-standard), box-shadow var(--dur-fast) var(--ease-standard); }
   .btn-press:active { transform: translateY(1px) scale(0.99); }
+
+  /* Enhanced button visuals */
+  .btn-animated {
+    transition: transform var(--dur-fast) var(--ease-standard), box-shadow var(--dur-fast) var(--ease-standard);
+    will-change: transform, box-shadow;
+  }
+  .btn-animated:hover { transform: translateY(-3px) scale(1.02); box-shadow: var(--shadow-card-hover); }
+  .btn-animated:active { transform: translateY(0) scale(0.99); }
+
+  /* Gradient animated hero button */
+  .btn-glow {
+    background: linear-gradient(90deg, hsl(221 83% 53%), hsl(262 83% 58%));
+    background-size: 200% 200%;
+    color: var(--primary-foreground);
+    box-shadow: var(--shadow-glow-primary);
+    animation: gradientShift 6s linear infinite;
+  }
+
+  .btn-glow-sm {
+    background: linear-gradient(90deg, hsl(221 83% 53%), hsl(262 83% 58%));
+    color: var(--primary-foreground);
+    box-shadow: var(--shadow-glow-primary);
+    animation: gradientShift 6s linear infinite;
+  }
+
+  @keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {

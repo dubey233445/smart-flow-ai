@@ -29,7 +29,7 @@ const Hero = () => {
           </Reveal>
           <Reveal delay={300}>
             <div className="mt-8 flex flex-wrap gap-3">
-              <Button variant="hero" size="lg" className="btn-press" asChild>
+              <Button variant="hero" size="lg" className="btn-press btn-glow btn-animated" asChild>
                 <a href="#cta">Get Started <ArrowRight className="ml-1" /></a>
               </Button>
               <Button variant="glass" size="lg" className="btn-press" asChild>

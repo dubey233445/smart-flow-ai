@@ -41,7 +41,7 @@ const Index = () => {
           showSticky ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0 pointer-events-none"
         )}
       >
-        <Button variant="hero" size="lg" className="w-full btn-press shadow-elegant" asChild>
+        <Button variant="hero" size="lg" className="w-full btn-press btn-glow btn-animated shadow-elegant" asChild>
           <a href="tel:9450935939"><PhoneCall className="mr-1" /> Book a Call</a>
         </Button>
       </div>

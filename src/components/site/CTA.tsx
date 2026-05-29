@@ -20,7 +20,7 @@ const CTA = () => {
                 Book a free 30-minute consultation. We'll map out automations that move the needle — no fluff, no obligation.
               </p>
               <div className="mt-8 flex flex-wrap gap-3 justify-center">
-                <Button size="lg" className="bg-white text-primary hover:bg-white/95 hover:scale-[1.03] shadow-elegant btn-press transition-medium" asChild>
+                <Button size="lg" className="bg-white text-primary hover:bg-white/95 hover:scale-[1.03] shadow-elegant btn-press btn-animated transition-medium" asChild>
                   <a href="tel:9450935939">Book a Free Consultation <ArrowRight className="ml-1" /></a>
                 </Button>
                 <Button size="lg" className="bg-transparent text-primary-foreground border border-white/40 hover:bg-white/10 btn-press transition-medium">
