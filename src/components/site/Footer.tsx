@@ -14,7 +14,7 @@ const Footer = () => {
               Smart AI systems that save time, reduce costs, and scale your operations.
             </p>
             <a href="mailto:hello@skillyuglab.com" className="mt-5 inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors">
-              <Mail className="h-4 w-4" /> hello@skillyuglab.com
+              <Mail className="h-4 w-4" /> consultantskillyug@gmail.com
             </a>
           </div>
           <div>
