@@ -1,5 +1,9 @@
 import { Mail } from "lucide-react";
+<<<<<<< HEAD
 import logo from "@/assets/logo.jpg";
+=======
+import logo from "@/assets/logo.png";
+>>>>>>> 1913dd492bed85961f5300c841f2edc284060fa9
 
 const Footer = () => {
   return (
@@ -22,7 +26,11 @@ const Footer = () => {
             <ul className="space-y-3 text-sm text-muted-foreground">
               {["Home", "Services", "Demos", "Contact"].map((l) => (
                 <li key={l}>
+<<<<<<< HEAD
                   <a href="#" className="relative hover:text-foreground transition-colors after:absolute after:left-0 after:-bottom-0.5 after:h-px after:w-0 after:bg-foreground after:content-[''] hover:after:w-full after:transition-all">
+=======
+                  <a href="#" className="relative hover:text-foreground transition-colors after:content-[''] after:absolute after:left-0 after:-bottom-0.5 after:h-px after:w-0 after:bg-foreground hover:after:w-full after:transition-all">
+>>>>>>> 1913dd492bed85961f5300c841f2edc284060fa9
                     {l}
                   </a>
                 </li>
@@ -39,7 +47,11 @@ const Footer = () => {
           </div>
         </div>
         <div className="mt-12 pt-6 border-t border-border flex flex-col md:flex-row justify-between gap-3 text-xs text-muted-foreground">
+<<<<<<< HEAD
           <p>© {new Date().getFullYear()} SkillYug Technologies . All rights reserved.</p>
+=======
+          <p>© {new Date().getFullYear()} SkillYug Lab. All rights reserved.</p>
+>>>>>>> 1913dd492bed85961f5300c841f2edc284060fa9
           <p>Built with care · Premium AI automation</p>
         </div>
       </div>

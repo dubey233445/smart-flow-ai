@@ -1,5 +1,9 @@
 import { Button } from "@/components/ui/button";
+<<<<<<< HEAD
 import { ArrowRight } from "lucide-react";
+=======
+import { ArrowRight, Mail, Phone } from "lucide-react";
+>>>>>>> 1913dd492bed85961f5300c841f2edc284060fa9
 import Reveal from "./Reveal";
 
 const CTA = () => {
@@ -14,6 +18,7 @@ const CTA = () => {
 
             <div className="relative">
               <h2 className="font-display text-3xl md:text-5xl font-bold leading-tight text-primary-foreground">
+<<<<<<< HEAD
                 Ready to automate <br className="hidden md:block" /> your business?
               </h2>
               <p className="mt-4 text-primary-foreground/90 max-w-xl mx-auto leading-relaxed">
@@ -22,6 +27,53 @@ const CTA = () => {
               <div className="mt-8 flex flex-wrap gap-3 justify-center">
                 <Button size="lg" className="bg-white text-primary hover:bg-white/95 hover:scale-[1.03] shadow-elegant btn-press btn-animated transition-medium" asChild>
                   <a href="https://docs.google.com/forms/d/e/1FAIpQLSfEQ2YLNjB5N9exUh16Izbw3D8PrzXMps1JiA8-OTgodks3uA/viewform" target="_blank" rel="noopener noreferrer">Book a Free Consultation <ArrowRight className="ml-1" /></a>
+=======
+                Ready to automate <br className="hidden md:block" />
+                your business?
+              </h2>
+
+              <p className="mt-4 text-primary-foreground/90 max-w-xl mx-auto leading-relaxed">
+                Let's discuss your business requirements and build the right automation solutions together.
+              </p>
+
+              {/* Contact Info */}
+              <div className="mt-6 flex flex-col items-center gap-2 text-primary-foreground">
+                <div className="flex items-center gap-2">
+                  <Mail size={18} />
+                  <span>consultantskillyug@gmail.com</span>
+                </div>
+
+                <div className="flex items-center gap-2">
+                  <Phone size={18} />
+                  <span>9450935939</span>
+                </div>
+              </div>
+
+              <div className="mt-8 flex flex-wrap gap-3 justify-center">
+                <Button
+                  size="lg"
+                  className="bg-white text-primary hover:bg-white/95 hover:scale-[1.03] shadow-elegant btn-press btn-animated transition-medium"
+                  asChild
+                >
+                  <a
+                    href="https://docs.google.com/forms/d/12RdL1PB6xmfXQOTf6tjx4T1xmJNZPZKv5pBIudeYnyQ/viewform"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Contact Us
+                    <ArrowRight className="ml-1" />
+                  </a>
+                </Button>
+
+                <Button
+                  size="lg"
+                  className="bg-transparent text-primary-foreground border border-white/40 hover:bg-white/10 btn-press transition-medium"
+                  asChild
+                >
+                  <a href="#portfolio">
+                    View Portfolio
+                  </a>
+>>>>>>> 1913dd492bed85961f5300c841f2edc284060fa9
                 </Button>
               </div>
             </div>

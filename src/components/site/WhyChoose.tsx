@@ -15,7 +15,11 @@ const WhyChoose = () => {
       <div className="mx-auto max-w-content px-6 md:px-10 grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
         <div>
           <Reveal>
+<<<<<<< HEAD
             <p className="text-sm font-medium text-primary mb-3">Why SkillYug Lab</p>
+=======
+            <p className="text-sm font-medium text-primary mb-3">Why SkillYug Technologies</p>
+>>>>>>> 1913dd492bed85961f5300c841f2edc284060fa9
             <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground leading-tight">
               Premium automation, <br /><span className="text-gradient">startup-friendly</span> pricing
             </h2>
