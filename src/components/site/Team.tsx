@@ -2,6 +2,7 @@ import vinayak from "@/assets/team/Vinayak.jpeg";
 import aditi from "@/assets/team/Aditi.jpeg";
 import shifa from "@/assets/team/Shifa.jpeg";
 import vatsal from "@/assets/team/Vatsal.jpeg";
+import tanya from "@/assets/team/tanya.jpeg";
 
 
 const teamMembers = [
