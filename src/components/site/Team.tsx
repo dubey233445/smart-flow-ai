@@ -1,9 +1,8 @@
 import vinayak from "@/assets/team/Vinayak.jpeg";
-import ashish from "@/assets/team/Ashish.png";
 import aditi from "@/assets/team/Aditi.jpeg";
 import shifa from "@/assets/team/Shifa.jpeg";
 import vatsal from "@/assets/team/Vatsal.jpeg";
-import tanya from "@/assets/team/tanya.jpeg";
+import tanya from "@/assets/team/Tanya.jpeg";
 
 const teamMembers = [
   {
@@ -12,13 +11,6 @@ const teamMembers = [
     image: vinayak,
     intro:
       "AI Engineer and entrepreneur leading SkillYug Technologies with a vision to build impactful AI, automation, and digital solutions.",
-  },
-  {
-    name: "Ashish Dubey",
-    role: "Co-Founder & Chief Operating Officer",
-    image: ashish,
-    intro:
-      "Manages operations, business strategy, client relationships, and growth initiatives across the organization.",
   },
   {
     name: "Aditi Mall",
@@ -41,7 +33,6 @@ const teamMembers = [
     intro:
       "Leads software development initiatives, product engineering, technology execution, and innovation across SkillYug Technologies.",
   },
-
   {
     name: "Tanya",
     role: "Social Media Manager",
@@ -73,9 +64,9 @@ const Team = () => {
 
         {/* Team Cards */}
         <div className="grid md:grid-cols-2 gap-6">
-          {teamMembers.map((member) => (
+          {teamMembers.map((member, index) => (
             <div
-              key={member.name}
+              key={index}
               className="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
             >
               <div className="flex gap-5 items-start">
