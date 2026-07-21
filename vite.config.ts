@@ -19,10 +19,11 @@ export default defineConfig(({ mode }) => ({
     dedupe: ["react", "react-dom", "react/jsx-runtime", "react/jsx-dev-runtime", "@tanstack/react-query", "@tanstack/query-core"],
   },
   build: {
-    outDir: 'build',
+    outDir: 'dist',
   },
   test: {
     environment: 'jsdom',
-    setupFiles: './src/test/setup.ts',
+    setupFiles: path.resolve(__dirname, './src/test/setup.ts'),
+    resolve: undefined, // explicitly set resolve to undefined to avoid conflict with vite's resolve option
   },
 }));
