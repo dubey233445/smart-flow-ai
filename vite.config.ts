@@ -20,10 +20,11 @@ export default defineConfig(({ mode }) => ({
   },
   build: {
     outDir: 'dist',
+    sourcemap: true,
   },
   test: {
     environment: 'jsdom',
     setupFiles: path.resolve(__dirname, './src/test/setup.ts'),
-    resolve: undefined, // explicitly set resolve to undefined to avoid conflict with vite's resolve option
+    resolve: undefined, 
   },
 }));

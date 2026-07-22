@@ -8,9 +8,10 @@
     "build": "vite build --outDir dist",
     "build:dev": "vite build --mode development --outDir dist",
     "lint": "eslint .",
-    "preview": "vite preview",
+    "preview": "vite preview --outDir dist",
     "test": "vitest run",
-    "test:watch": "vitest"
+    "test:watch": "vitest",
+    "deploy": "vercel build --output-dir dist && vercel deploy --prod"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",
